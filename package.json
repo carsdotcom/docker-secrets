@@ -2,6 +2,10 @@
   "name": "secrets-docker",
   "version": "0.0.2",
   "description": "A simple module to read secrets created in a Docker Swarm cluster.",
+	"repository" : {
+		"type": "git",
+		"url": "https://github.com/carsdotcom/docker-secrets.git"
+	},
   "main": "lib/index.js",
   "scripts": {
     "test": "node --es_staging node_modules/.bin/_mocha",
