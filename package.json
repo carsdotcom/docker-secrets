@@ -1,0 +1,38 @@
+{
+  "name": "secrets-docker",
+  "version": "0.0.2",
+  "description": "A simple module to read secrets created in a Docker Swarm cluster.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node --es_staging node_modules/.bin/_mocha",
+    "watch": "node --es_staging node_modules/.bin/_mocha --watch --bail",
+    "coverage": "node --es_staging node_modules/.bin/istanbul cover node_modules/.bin/_mocha",
+    "lint": "node --es_staging node_modules/.bin/eslint ./test/**/*.js ./lib/**/*.js"
+  },
+  "contributors": [
+		{
+    	"name": "Deep Mistry",
+    	"email": "dmistry@cars.com"
+  	}
+	],
+	"license": "Apache-2.0",
+	"dependencies": {
+    "lodash": "^4.17.2",
+    "bluebird": "^3.0.6"
+  },
+  "devDependencies": {
+    "mock-fs": "4.3.0",
+    "chai-as-promised": "^6.0.0",
+    "chai": "^3.4.1",
+    "eslint": "^1.10.3",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4",
+    "pre-commit": "^1.1.2"
+  },
+  "pre-commit": {
+    "run": [
+      "test",
+      "lint"
+    ]
+  }
+}
