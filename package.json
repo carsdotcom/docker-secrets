@@ -1,11 +1,11 @@
 {
   "name": "secrets-docker",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple module to read secrets created in a Docker Swarm cluster.",
-	"repository" : {
-		"type": "git",
-		"url": "https://github.com/carsdotcom/docker-secrets.git"
-	},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carsdotcom/docker-secrets.git"
+  },
   "main": "lib/index.js",
   "scripts": {
     "test": "node --es_staging node_modules/.bin/_mocha",
@@ -14,13 +14,13 @@
     "lint": "node --es_staging node_modules/.bin/eslint ./test/**/*.js ./lib/**/*.js"
   },
   "contributors": [
-		{
-    	"name": "Deep Mistry",
-    	"email": "dmistry@cars.com"
-  	}
-	],
-	"license": "Apache-2.0",
-	"dependencies": {
+    {
+      "name": "Deep Mistry",
+      "email": "dmistry@cars.com"
+    }
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
     "lodash": "^4.17.2",
     "bluebird": "^3.0.6"
   },
