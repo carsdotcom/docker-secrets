@@ -14,7 +14,7 @@ Given the below secrets -
 ```javascript
 const secrets = require('secrets-docker');
 
-config.readAll().then((data) => {
+secrets.readAll().then((data) => {
   console.log(data.dbuser) // readonly
   console.log(data.dbpass) // super-secret-pass
 })
@@ -39,7 +39,7 @@ And read the secret file as below
 ```javascript
 const secrets = require('secrets-docker');
 
-config.read('test-secret').then((data) => {
+secrets.read('test-secret').then((data) => {
   console.log(data.dbuser) // readonly
   console.log(data.apikey) // super-secret-apiKey
 })
