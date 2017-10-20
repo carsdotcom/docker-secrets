@@ -20,6 +20,7 @@ secrets.readAll().then((data) => {
 })
 ```
 
+
 ### Read a single secret
 
 Docker secrets are available to a container as files under /run/secrets. Since they are files, you can create a secret whose value is a property file like below.   
@@ -46,3 +47,13 @@ secrets.read('test-secret').then((data) => {
 ```
 
 Note that Docker allows a secret to be upto 500 kb in size.
+
+### Specify a fallback path
+
+In situations where the /run/secrets directory is not available, you can configure docker-secrets to
+use a fallback path with the init method
+
+```javascript
+const secrets = require('secrets-docker');
+secrets.init({ fallbackPath: './foo/bar/baz' });
+```
