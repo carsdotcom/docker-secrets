@@ -186,7 +186,7 @@ describe('test', function () {
                         }
                     });
 
-                    app.init({path: './foo/bar/baz'});
+                    app.init({fallbackPath: './foo/bar/baz'});
                 });
 
                 afterEach(function () {
@@ -260,7 +260,7 @@ describe('test', function () {
 
                     });
 
-                    app.init({path: './foo/bar/baz'});
+                    app.init({fallbackPath: './foo/bar/baz'});
                 });
 
                 afterEach(function () {
@@ -337,7 +337,7 @@ describe('test', function () {
                     }
                 });
 
-                app.init({path: './foo/bar/baz'});
+                app.init({fallbackPath: './foo/bar/baz'});
             });
 
             afterEach(function () {
