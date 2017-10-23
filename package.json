@@ -1,6 +1,6 @@
 {
   "name": "secrets-docker",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "A simple module to read secrets created in a Docker Swarm cluster.",
   "repository": {
     "type": "git",
